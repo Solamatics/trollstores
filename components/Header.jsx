@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <>
       <header>
-        <nav className="flex h-20 items-center px-4 justify-between shadow-md fixed top-0 right-0 left-0">
+        <nav className="flex h-20 items-center px-4 justify-between shadow-md fixed top-0 right-0 left-0 bg-white">
           <Link href="/" className="text-lg font-bold">
             amazona
           </Link>

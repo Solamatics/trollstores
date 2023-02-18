@@ -13,7 +13,7 @@ const Layout = ({ title, children }) => {
       </Head>
       <div className="flex min-h-screen flex-col justify-between">
         <Header />
-        <main className="container m-auto mt-20 px-4">{children}</main>
+        <main className="container m-auto mt-32 px-4">{children}</main>
         <Footer />
       </div>
     </>
