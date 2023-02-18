@@ -1,25 +1,23 @@
-import Head from 'next/head';
-import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
+import Head from "next/head";
+import React from "react";
+import Header from "./Header";
+import Footer from "./Footer";
 
-const Layout = ({title, children}) => {
-
+const Layout = ({ title, children }) => {
   return (
     <>
-     <Head>
-        <title>{title ? `${title} - Amazona` : 'Amazona'}</title>
+      <Head>
+        <title>{title ? `${title} - Amazona` : "Amazona"}</title>
         <meta name="description" content="Ecommerce Website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex min-h-screen flex-col justify-between">
-          <Header />
-          <main className='container m-auto mt-4 px-4'>{children}</main>
-          <Footer />
+        <Header />
+        <main className="container m-auto mt-20 px-4">{children}</main>
+        <Footer />
       </div>
     </>
-    
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
