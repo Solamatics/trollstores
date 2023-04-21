@@ -11,11 +11,12 @@ const ProductScreen = () => {
   const { state, dispatch } = useContext(Store);
 
   const { query } = useRouter();
+  console.log("Query :", query);
   const { slug } = query;
   const product = data.products.find((product) => product.slug === slug);
 
   if (!product) {
-    return <div>Product(s) not found</div>;
+    return <NoProducts />;
   }
 
   //add to cart button handler
