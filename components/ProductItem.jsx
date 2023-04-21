@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useContext } from "react";
+import React from "react";
 import Link from "next/link";
-import { Store } from "../utils/Store";
+// import { Store } from "../utils/Store";
 
 const ProductItem = ({ product }) => {
-  const { dispatch } = useContext(Store);
+  // const { dispatch } = useContext(Store);
 
   return (
     <div className="card">
